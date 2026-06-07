@@ -1,5 +1,5 @@
 <div align="center">
-  ![Shaur Logo](Shaur%20.png?raw=true)
+  <img src="https://i.imgur.com/3rFQ0cC.png" alt="Shaur Logo" width="150"/>
   
   # Shaur Compiler (v5.0)
   
