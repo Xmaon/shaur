@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.imgur.com/3rFQ0cC.png" alt="Shaur Logo" width="150"/>
+  <img src="https://ibb.co/Gf0X2kzd" alt="Shaur Logo" width="150"/>
   
   # Shaur Compiler (v5.0)
   
