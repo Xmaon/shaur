@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="[![Shaur.png](https://i.postimg.cc/tCBkctkV/Shaur.png)](https://postimg.cc/8jrLJvq1)" alt="Shaur Logo" width="120"/>
+[![Shaur Logo](https://i.postimg.cc/tCBkctkV/Shaur.png)](https://postimg.cc/8jrLJvq1)
 
-# Shaur Compiler · v5.0
+# Shaur Compiler · v0.5
 
 *Experimental bare-metal compiler for Windows PE/EXE*
 *Экспериментальный bare-metal компилятор для Windows PE/EXE*
