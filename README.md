@@ -1,55 +1,72 @@
 <div align="center">
-  <img src="https://i.imgur.com/3rFQ0cC.png" alt="Shaur Logo" width="150"/>
-  
-  # Shaur Compiler (v5.0)
-  
-  [![Discord](https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/DtFCDBzVT)
-  
+
+<img src="[![Shaur.png](https://i.postimg.cc/tCBkctkV/Shaur.png)](https://postimg.cc/8jrLJvq1)" alt="Shaur Logo" width="120"/>
+
+# Shaur Compiler · v5.0
+
+*Experimental bare-metal compiler for Windows PE/EXE*
+*Экспериментальный bare-metal компилятор для Windows PE/EXE*
+
+[![Discord](https://img.shields.io/badge/Discord-Join%20Server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/DtFCDBzVT)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D4?style=for-the-badge&logo=windows&logoColor=white)
+![Language](https://img.shields.io/badge/Lang-x86%20%7C%20PowerShell-CC342D?style=for-the-badge&logo=powershell&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Early%20Dev-FFB347?style=for-the-badge)
+
 </div>
-
-**Shaur** — экспериментальный компилятор и язык программирования, разработанный для глубокого изучения внутреннего устройства исполняемых файлов (Windows PE/EXE) и машинного кода (x86).
-
-Проект построен как «bare-metal» транслятор: он не использует сторонние библиотеки для сборки, а вручную формирует бинарную структуру PE-файла, включая таблицу импорта (IAT) и управление регистрами процессора.
 
 ---
 
-## 🚀 Основные возможности
+**Shaur** is an experimental compiler and programming language for deep exploration of Windows executables (PE/EXE) and x86 machine code.
+Built as a **bare-metal** translator — no third-party libraries, no shortcuts. Every byte of the PE file is crafted by hand, including the Import Address Table (IAT) and CPU register management.
 
-- **Native EXE Generation** — прямая генерация исполняемых файлов для Windows без зависимостей
-- **Two-Pass Compilation** — двухпроходный компилятор с функциями (`function`), вызовами (`call`) и метками
-- **WinAPI Integration** — встроенная поддержка WinAPI для вывода через `MessageBoxA`
-- **Minimalist ISA** — упрощённая система команд (регистры EAX/EBX, память)
+**Shaur** — экспериментальный компилятор и язык программирования для глубокого изучения Windows-исполняемых файлов (PE/EXE) и машинного кода x86.
+Построен как **bare-metal** транслятор — никаких сторонних библиотек, каждый байт PE-файла формируется вручную, включая таблицу импорта (IAT) и управление регистрами.
 
-## 🛠 Как это работает
+---
 
-Проект состоит из одного PowerShell-скрипта, который выполняет роль ассемблера и линкера:
+## 🚀 Features · Возможности
 
-1. **Сбор команд** — разбор кода и построение таблицы символов
-2. **Машинный код** — трансляция команд в байты x86
-3. **PE-структура** — сборка PE-заголовка, импорты, расчёт смещений
+| Feature | EN | RU |
+|---|---|---|
+| ⚙️ **Native EXE** | Direct `.exe` generation, zero dependencies | Прямая генерация `.exe`, без зависимостей |
+| 🔄 **Two-Pass Compiler** | Functions, calls, labels resolved in 2 passes | Функции, вызовы и метки — двухпроходный анализ |
+| 🪟 **WinAPI Integration** | Built-in `MessageBoxA` + IAT support | Встроенная поддержка `MessageBoxA` + IAT |
+| 🧩 **Minimalist ISA** | EAX / EBX registers, memory operations | Регистры EAX/EBX, операции с памятью |
 
-## 💡 Пример кода (Shaur)
+---
 
-```plaintext
+## 🛠 How It Works · Как это работает
+---
+
+## 💡 Code Example · Пример кода
+
+```shaur
 function my_math
-    set 10
-    add 5
-    print
-    ret
+    set 10      ; load value · загрузить значение
+    add 5       ; add        · прибавить
+    print       ; output     · вывод
+    ret         ; return     · возврат
 
 call my_math
 run
 ```
 
-## ⚠️ Статус
+---
 
-**Educational Sandbox / Early Development.**  
-Цель проекта — изучение архитектуры x86, загрузчика Windows и принципов компиляции.
+## ⚠️ Status · Статус
+
+> 🟡 **Educational Sandbox / Early Development**
+>
+> **EN:** The goal is to study x86 architecture, the Windows loader, and compilation internals from scratch.
+>
+> **RU:** Цель проекта — изучить архитектуру x86, загрузчик Windows и принципы компиляции с нуля.
 
 ---
 
 <div align="center">
-  <a href="https://discord.gg/DtFCDBzVT">
-    <img src="https://img.shields.io/badge/Join_Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/>
-  </a>
+
+*Made with curiosity · Сделано с любопытством*
+
+[![Discord](https://img.shields.io/badge/Join_Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/DtFCDBzVT)
+
 </div>
