@@ -1,7 +1,8 @@
 <div align="center">
 
-[![Shaur Logo](https://i.postimg.cc/tCBkctkV/Shaur.png)](https://postimg.cc/8jrLJvq1)
-
+<a href="https://postimg.cc/WFHXjvJD">
+  <img src="https://i.postimg.cc/4yJM64f1/s.jpg" alt="Shaur Logo" width="120"/>
+</a>
 # Shaur Compiler · v0.5
 
 *Experimental bare-metal compiler for Windows PE/EXE*
